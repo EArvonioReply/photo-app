@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		522230E62AB986F10040676B /* PhotosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522230E42AB986F10040676B /* PhotosTableViewCell.swift */; };
+		522230E72AB986F10040676B /* PhotosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 522230E52AB986F10040676B /* PhotosTableViewCell.xib */; };
+		522230EB2AB9C7B30040676B /* DeepLinkBaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522230E92AB9C7B30040676B /* DeepLinkBaseCoordinator.swift */; };
+		522230EC2AB9C7B30040676B /* DeepLinkCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522230EA2AB9C7B30040676B /* DeepLinkCoordinator.swift */; };
+		522230EE2AB9C7DA0040676B /* PhotosBaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522230ED2AB9C7DA0040676B /* PhotosBaseCoordinator.swift */; };
+		522230F02AB9C7E20040676B /* StatsBaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522230EF2AB9C7E20040676B /* StatsBaseCoordinator.swift */; };
+		522230F32AB9D1A40040676B /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522230F22AB9D1A40040676B /* Photo.swift */; };
 		52F9DB0E2AB85695004A7565 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9DB0D2AB85695004A7565 /* AppDelegate.swift */; };
 		52F9DB102AB85695004A7565 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9DB0F2AB85695004A7565 /* SceneDelegate.swift */; };
 		52F9DB172AB85696004A7565 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52F9DB162AB85696004A7565 /* Assets.xcassets */; };
@@ -18,15 +25,18 @@
 		52F9DB3B2AB8A34A004A7565 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9DB3A2AB8A34A004A7565 /* Coordinator.swift */; };
 		52F9DB3D2AB8A3E7004A7565 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9DB3C2AB8A3E7004A7565 /* MainCoordinator.swift */; };
 		52F9DB3F2AB8A50C004A7565 /* MainBaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9DB3E2AB8A50C004A7565 /* MainBaseCoordinator.swift */; };
-		52F9DB412AB8A8D3004A7565 /* PhotosBaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9DB402AB8A8D3004A7565 /* PhotosBaseCoordinator.swift */; };
 		52F9DB432AB8A8F2004A7565 /* PhotosCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9DB422AB8A8F2004A7565 /* PhotosCoordinator.swift */; };
-		52F9DB452AB8AABA004A7565 /* StatsBaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9DB442AB8AABA004A7565 /* StatsBaseCoordinator.swift */; };
 		52F9DB472AB8AAD7004A7565 /* StatsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9DB462AB8AAD7004A7565 /* StatsCoordinator.swift */; };
-		52F9DB4B2AB8AB97004A7565 /* DeepLinkCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9DB4A2AB8AB97004A7565 /* DeepLinkCoordinator.swift */; };
-		52F9DB4D2AB8DFD8004A7565 /* DeepLinkBaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9DB4C2AB8DFD8004A7565 /* DeepLinkBaseCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		522230E42AB986F10040676B /* PhotosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosTableViewCell.swift; sourceTree = "<group>"; };
+		522230E52AB986F10040676B /* PhotosTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotosTableViewCell.xib; sourceTree = "<group>"; };
+		522230E92AB9C7B30040676B /* DeepLinkBaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeepLinkBaseCoordinator.swift; sourceTree = "<group>"; };
+		522230EA2AB9C7B30040676B /* DeepLinkCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeepLinkCoordinator.swift; sourceTree = "<group>"; };
+		522230ED2AB9C7DA0040676B /* PhotosBaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosBaseCoordinator.swift; sourceTree = "<group>"; };
+		522230EF2AB9C7E20040676B /* StatsBaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsBaseCoordinator.swift; sourceTree = "<group>"; };
+		522230F22AB9D1A40040676B /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		52F9DB0A2AB85695004A7565 /* photo-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "photo-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F9DB0D2AB85695004A7565 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52F9DB0F2AB85695004A7565 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,12 +50,8 @@
 		52F9DB3A2AB8A34A004A7565 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		52F9DB3C2AB8A3E7004A7565 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		52F9DB3E2AB8A50C004A7565 /* MainBaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBaseCoordinator.swift; sourceTree = "<group>"; };
-		52F9DB402AB8A8D3004A7565 /* PhotosBaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosBaseCoordinator.swift; sourceTree = "<group>"; };
 		52F9DB422AB8A8F2004A7565 /* PhotosCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCoordinator.swift; sourceTree = "<group>"; };
-		52F9DB442AB8AABA004A7565 /* StatsBaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsBaseCoordinator.swift; sourceTree = "<group>"; };
 		52F9DB462AB8AAD7004A7565 /* StatsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsCoordinator.swift; sourceTree = "<group>"; };
-		52F9DB4A2AB8AB97004A7565 /* DeepLinkCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkCoordinator.swift; sourceTree = "<group>"; };
-		52F9DB4C2AB8DFD8004A7565 /* DeepLinkBaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeepLinkBaseCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		522230E82AB9B65F0040676B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				522230E42AB986F10040676B /* PhotosTableViewCell.swift */,
+				522230E52AB986F10040676B /* PhotosTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		522230F12AB9D1930040676B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				522230F22AB9D1A40040676B /* Photo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		52F9DB012AB85695004A7565 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +103,7 @@
 			children = (
 				52F9DB0D2AB85695004A7565 /* AppDelegate.swift */,
 				52F9DB0F2AB85695004A7565 /* SceneDelegate.swift */,
+				522230F12AB9D1930040676B /* Models */,
 				52F9DB322AB89FE1004A7565 /* Photos */,
 				52F9DB332AB89FEB004A7565 /* Stats */,
 				52F9DB312AB89FC2004A7565 /* Coordinator */,
@@ -93,10 +117,10 @@
 		52F9DB312AB89FC2004A7565 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				522230E92AB9C7B30040676B /* DeepLinkBaseCoordinator.swift */,
+				522230EA2AB9C7B30040676B /* DeepLinkCoordinator.swift */,
 				52F9DB3A2AB8A34A004A7565 /* Coordinator.swift */,
 				52F9DB3E2AB8A50C004A7565 /* MainBaseCoordinator.swift */,
-				52F9DB4C2AB8DFD8004A7565 /* DeepLinkBaseCoordinator.swift */,
-				52F9DB4A2AB8AB97004A7565 /* DeepLinkCoordinator.swift */,
 				52F9DB3C2AB8A3E7004A7565 /* MainCoordinator.swift */,
 			);
 			path = Coordinator;
@@ -106,8 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				52F9DB382AB8A297004A7565 /* Coordinator */,
-				52F9DB342AB89FFC004A7565 /* Controllers */,
-				52F9DB362AB8A025004A7565 /* Views */,
+				52F9DB362AB8A025004A7565 /* ViewControllers */,
 			);
 			path = Photos;
 			sourceTree = "<group>";
@@ -116,48 +139,34 @@
 			isa = PBXGroup;
 			children = (
 				52F9DB392AB8A2DF004A7565 /* Coordinator */,
-				52F9DB352AB8A012004A7565 /* Controllers */,
-				52F9DB372AB8A031004A7565 /* Views */,
+				52F9DB372AB8A031004A7565 /* ViewsControllers */,
 			);
 			path = Stats;
 			sourceTree = "<group>";
 		};
-		52F9DB342AB89FFC004A7565 /* Controllers */ = {
+		52F9DB362AB8A025004A7565 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				52F9DB232AB884AA004A7565 /* PhotosViewController.swift */,
+				52F9DB242AB884AA004A7565 /* PhotosViewController.xib */,
+				522230E82AB9B65F0040676B /* Cells */,
 			);
-			path = Controllers;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		52F9DB352AB8A012004A7565 /* Controllers */ = {
+		52F9DB372AB8A031004A7565 /* ViewsControllers */ = {
 			isa = PBXGroup;
 			children = (
 				52F9DB272AB884CE004A7565 /* StatsViewController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		52F9DB362AB8A025004A7565 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				52F9DB242AB884AA004A7565 /* PhotosViewController.xib */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		52F9DB372AB8A031004A7565 /* Views */ = {
-			isa = PBXGroup;
-			children = (
 				52F9DB282AB884CE004A7565 /* StatsViewController.xib */,
 			);
-			path = Views;
+			path = ViewsControllers;
 			sourceTree = "<group>";
 		};
 		52F9DB382AB8A297004A7565 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				52F9DB402AB8A8D3004A7565 /* PhotosBaseCoordinator.swift */,
+				522230ED2AB9C7DA0040676B /* PhotosBaseCoordinator.swift */,
 				52F9DB422AB8A8F2004A7565 /* PhotosCoordinator.swift */,
 			);
 			path = Coordinator;
@@ -166,7 +175,7 @@
 		52F9DB392AB8A2DF004A7565 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				52F9DB442AB8AABA004A7565 /* StatsBaseCoordinator.swift */,
+				522230EF2AB9C7E20040676B /* StatsBaseCoordinator.swift */,
 				52F9DB462AB8AAD7004A7565 /* StatsCoordinator.swift */,
 			);
 			path = Coordinator;
@@ -234,6 +243,7 @@
 				52F9DB1A2AB85696004A7565 /* LaunchScreen.storyboard in Resources */,
 				52F9DB2A2AB884CE004A7565 /* StatsViewController.xib in Resources */,
 				52F9DB172AB85696004A7565 /* Assets.xcassets in Resources */,
+				522230E72AB986F10040676B /* PhotosTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,16 +254,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52F9DB4B2AB8AB97004A7565 /* DeepLinkCoordinator.swift in Sources */,
 				52F9DB472AB8AAD7004A7565 /* StatsCoordinator.swift in Sources */,
+				522230EB2AB9C7B30040676B /* DeepLinkBaseCoordinator.swift in Sources */,
 				52F9DB3F2AB8A50C004A7565 /* MainBaseCoordinator.swift in Sources */,
-				52F9DB4D2AB8DFD8004A7565 /* DeepLinkBaseCoordinator.swift in Sources */,
-				52F9DB452AB8AABA004A7565 /* StatsBaseCoordinator.swift in Sources */,
-				52F9DB412AB8A8D3004A7565 /* PhotosBaseCoordinator.swift in Sources */,
+				522230F02AB9C7E20040676B /* StatsBaseCoordinator.swift in Sources */,
+				522230EE2AB9C7DA0040676B /* PhotosBaseCoordinator.swift in Sources */,
 				52F9DB3D2AB8A3E7004A7565 /* MainCoordinator.swift in Sources */,
 				52F9DB0E2AB85695004A7565 /* AppDelegate.swift in Sources */,
+				522230E62AB986F10040676B /* PhotosTableViewCell.swift in Sources */,
 				52F9DB432AB8A8F2004A7565 /* PhotosCoordinator.swift in Sources */,
+				522230F32AB9D1A40040676B /* Photo.swift in Sources */,
 				52F9DB3B2AB8A34A004A7565 /* Coordinator.swift in Sources */,
+				522230EC2AB9C7B30040676B /* DeepLinkCoordinator.swift in Sources */,
 				52F9DB102AB85695004A7565 /* SceneDelegate.swift in Sources */,
 				52F9DB292AB884CE004A7565 /* StatsViewController.swift in Sources */,
 				52F9DB252AB884AA004A7565 /* PhotosViewController.swift in Sources */,
