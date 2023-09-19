@@ -7,10 +7,8 @@
 
 import UIKit
 
-class PhotosCoordinator: PhotosBaseCoordinator {
-
+class PhotosCoordinator: Coordinator {
     var parentCoordinator: MainBaseCoordinator?
-    
     lazy var rootViewController: UIViewController = UIViewController()
     
     func start() -> UIViewController {

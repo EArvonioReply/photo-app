@@ -7,14 +7,14 @@
 
 import UIKit
 
-class PhotosViewController: UIViewController, PhotosBaseCoordinated {
+class PhotosViewController: UIViewController, Coordinated {
     
     @IBOutlet weak var photosTableView: UITableView!
     
-    var coordinator: PhotosBaseCoordinator?
+    var coordinator: Coordinator?
     var numberOfPhotos = 10
     
-    init(coordinator: PhotosBaseCoordinator) {
+    init(coordinator: Coordinator) {
         super.init(nibName: nil, bundle: nil)
         
         self.coordinator = coordinator

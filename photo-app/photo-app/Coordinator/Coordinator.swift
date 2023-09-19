@@ -15,15 +15,13 @@
 
 import UIKit
 
-protocol FlowCoordinator: AnyObject {
-    /// Reference to the parent coordinator (optional since the main coordinator doesn't have a parent
-    var parentCoordinator: MainBaseCoordinator? { get set }
-}
-
-protocol Coordinator: FlowCoordinator {
+protocol Coordinator {
     /// Reference to the associated `ViewController`.
     /// TabBarController for the MainCoordinator; Photos/Stats..ViewController for ../Coordinator
     var rootViewController: UIViewController { get set }
+    
+    /// Reference to the parent coordinator (optional since the main coordinator doesn't have a parent
+    var parentCoordinator: MainBaseCoordinator? { get set }
     
     /// `rootViewController` initializer
     func start() -> UIViewController
