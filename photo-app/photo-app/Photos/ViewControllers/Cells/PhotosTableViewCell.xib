@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="Cell" rowHeight="159" id="KGk-i7-Jjw" customClass="PhotosTableViewCell" customModule="photo_app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="159"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="355" height="159"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="1000" preservesSuperviewLayoutMargins="YES" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="xKX-bJ-fdA">
+                        <rect key="frame" x="10" y="2" width="335" height="155"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" image="square.and.arrow.up.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="rHj-W0-gp4">
+                                <rect key="frame" x="0.0" y="3.6666666666666714" width="255" height="148.66666666666663"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="VnZ-me-nQ1"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Bla-gV-rDU">
+                                <rect key="frame" x="285" y="33.333333333333336" width="50" height="88.666666666666657"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="999" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Mc-hn-Nsp">
+                                        <rect key="frame" x="0.33333333333331439" y="0.0" width="49.333333333333336" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="hand.thumbsup" catalog="system"/>
+                                        <connections>
+                                            <action selector="thumbsUpButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="CaE-H9-QQu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="998" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jz-Cw-S9u">
+                                        <rect key="frame" x="0.33333333333331439" y="54.333333333333329" width="49.333333333333336" height="34.333333333333329"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="hand.thumbsdown" catalog="system"/>
+                                        <connections>
+                                            <action selector="thumbsDownButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="4pz-nm-ljP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="3ET-b7-5xD"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="xKX-bJ-fdA" secondAttribute="trailing" constant="10" id="Bn7-Zt-A35"/>
+                    <constraint firstAttribute="bottom" secondItem="xKX-bJ-fdA" secondAttribute="bottom" constant="2" id="EV4-JJ-p1v"/>
+                    <constraint firstItem="xKX-bJ-fdA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="SLC-61-bEE"/>
+                    <constraint firstItem="xKX-bJ-fdA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="fqo-K2-BCl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dislikeButton" destination="0jz-Cw-S9u" id="dif-CR-t13"/>
+                <outlet property="likeButton" destination="6Mc-hn-Nsp" id="kAp-wj-cVr"/>
+                <outlet property="picture" destination="rHj-W0-gp4" id="Io0-xv-F0l"/>
+            </connections>
+            <point key="canvasLocation" x="84.732824427480907" y="47.535211267605639"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="hand.thumbsdown" catalog="system" width="123" height="128"/>
+        <image name="hand.thumbsup" catalog="system" width="123" height="128"/>
+        <image name="square.and.arrow.up.circle.fill" catalog="system" width="128" height="123"/>
+    </resources>
+</document>

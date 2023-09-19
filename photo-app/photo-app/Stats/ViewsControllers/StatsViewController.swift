@@ -1,5 +1,5 @@
 //
-//  PhotosViewController.swift
+//  StatsViewController.swift
 //  photo-app
 //
 //  Created by Marco Agizza on 18/09/23.
@@ -7,14 +7,14 @@
 
 import UIKit
 
-class PhotosViewController: UIViewController, PhotosBaseCoordinated {
+class StatsViewController: UIViewController, StatsBaseCoordinated {
+
+    var coordinator: StatsBaseCoordinator?
     
-    var coordinator: PhotosBaseCoordinator?
-    
-    init(coordinator: PhotosBaseCoordinator) {
+    init(coordinator: StatsBaseCoordinator) {
         super.init(nibName: nil, bundle: nil)
         self.coordinator = coordinator
-        title = "Photos"
+        title = "Stats"
     }
     
     required init?(coder: NSCoder) {
@@ -23,7 +23,7 @@ class PhotosViewController: UIViewController, PhotosBaseCoordinated {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .cyan
+        // self.view.backgroundColor = .orange
     }
 
 }
