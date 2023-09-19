@@ -23,7 +23,7 @@ class PhotosViewController: UIViewController, PhotosBaseCoordinated {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .cyan
+        // self.view.backgroundColor = .cyan
     }
 
 }
