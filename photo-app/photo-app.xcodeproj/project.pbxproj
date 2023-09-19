@@ -9,10 +9,6 @@
 /* Begin PBXBuildFile section */
 		522230E62AB986F10040676B /* PhotosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522230E42AB986F10040676B /* PhotosTableViewCell.swift */; };
 		522230E72AB986F10040676B /* PhotosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 522230E52AB986F10040676B /* PhotosTableViewCell.xib */; };
-		522230EB2AB9C7B30040676B /* DeepLinkBaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522230E92AB9C7B30040676B /* DeepLinkBaseCoordinator.swift */; };
-		522230EC2AB9C7B30040676B /* DeepLinkCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522230EA2AB9C7B30040676B /* DeepLinkCoordinator.swift */; };
-		522230EE2AB9C7DA0040676B /* PhotosBaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522230ED2AB9C7DA0040676B /* PhotosBaseCoordinator.swift */; };
-		522230F02AB9C7E20040676B /* StatsBaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522230EF2AB9C7E20040676B /* StatsBaseCoordinator.swift */; };
 		522230F32AB9D1A40040676B /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522230F22AB9D1A40040676B /* Photo.swift */; };
 		52F9DB0E2AB85695004A7565 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9DB0D2AB85695004A7565 /* AppDelegate.swift */; };
 		52F9DB102AB85695004A7565 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9DB0F2AB85695004A7565 /* SceneDelegate.swift */; };
@@ -32,10 +28,6 @@
 /* Begin PBXFileReference section */
 		522230E42AB986F10040676B /* PhotosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosTableViewCell.swift; sourceTree = "<group>"; };
 		522230E52AB986F10040676B /* PhotosTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotosTableViewCell.xib; sourceTree = "<group>"; };
-		522230E92AB9C7B30040676B /* DeepLinkBaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeepLinkBaseCoordinator.swift; sourceTree = "<group>"; };
-		522230EA2AB9C7B30040676B /* DeepLinkCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeepLinkCoordinator.swift; sourceTree = "<group>"; };
-		522230ED2AB9C7DA0040676B /* PhotosBaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosBaseCoordinator.swift; sourceTree = "<group>"; };
-		522230EF2AB9C7E20040676B /* StatsBaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsBaseCoordinator.swift; sourceTree = "<group>"; };
 		522230F22AB9D1A40040676B /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		52F9DB0A2AB85695004A7565 /* photo-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "photo-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F9DB0D2AB85695004A7565 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -117,8 +109,6 @@
 		52F9DB312AB89FC2004A7565 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				522230E92AB9C7B30040676B /* DeepLinkBaseCoordinator.swift */,
-				522230EA2AB9C7B30040676B /* DeepLinkCoordinator.swift */,
 				52F9DB3A2AB8A34A004A7565 /* Coordinator.swift */,
 				52F9DB3E2AB8A50C004A7565 /* MainBaseCoordinator.swift */,
 				52F9DB3C2AB8A3E7004A7565 /* MainCoordinator.swift */,
@@ -166,7 +156,6 @@
 		52F9DB382AB8A297004A7565 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				522230ED2AB9C7DA0040676B /* PhotosBaseCoordinator.swift */,
 				52F9DB422AB8A8F2004A7565 /* PhotosCoordinator.swift */,
 			);
 			path = Coordinator;
@@ -175,7 +164,6 @@
 		52F9DB392AB8A2DF004A7565 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				522230EF2AB9C7E20040676B /* StatsBaseCoordinator.swift */,
 				52F9DB462AB8AAD7004A7565 /* StatsCoordinator.swift */,
 			);
 			path = Coordinator;
@@ -255,17 +243,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				52F9DB472AB8AAD7004A7565 /* StatsCoordinator.swift in Sources */,
-				522230EB2AB9C7B30040676B /* DeepLinkBaseCoordinator.swift in Sources */,
 				52F9DB3F2AB8A50C004A7565 /* MainBaseCoordinator.swift in Sources */,
-				522230F02AB9C7E20040676B /* StatsBaseCoordinator.swift in Sources */,
-				522230EE2AB9C7DA0040676B /* PhotosBaseCoordinator.swift in Sources */,
 				52F9DB3D2AB8A3E7004A7565 /* MainCoordinator.swift in Sources */,
 				52F9DB0E2AB85695004A7565 /* AppDelegate.swift in Sources */,
 				522230E62AB986F10040676B /* PhotosTableViewCell.swift in Sources */,
 				52F9DB432AB8A8F2004A7565 /* PhotosCoordinator.swift in Sources */,
 				522230F32AB9D1A40040676B /* Photo.swift in Sources */,
 				52F9DB3B2AB8A34A004A7565 /* Coordinator.swift in Sources */,
-				522230EC2AB9C7B30040676B /* DeepLinkCoordinator.swift in Sources */,
 				52F9DB102AB85695004A7565 /* SceneDelegate.swift in Sources */,
 				52F9DB292AB884CE004A7565 /* StatsViewController.swift in Sources */,
 				52F9DB252AB884AA004A7565 /* PhotosViewController.swift in Sources */,

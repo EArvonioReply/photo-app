@@ -7,10 +7,8 @@
 
 import UIKit
 
-class StatsCoordinator: StatsBaseCoordinator {
-
+class StatsCoordinator: Coordinator {
     var parentCoordinator: MainBaseCoordinator?
-    
     lazy var rootViewController: UIViewController = UIViewController()
     
     func start() -> UIViewController {

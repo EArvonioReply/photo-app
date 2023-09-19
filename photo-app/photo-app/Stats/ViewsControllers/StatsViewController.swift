@@ -7,11 +7,11 @@
 
 import UIKit
 
-class StatsViewController: UIViewController, StatsBaseCoordinated {
-
-    var coordinator: StatsBaseCoordinator?
+class StatsViewController: UIViewController, Coordinated {
     
-    init(coordinator: StatsBaseCoordinator) {
+    var coordinator: Coordinator?
+    
+    init(coordinator: Coordinator) {
         super.init(nibName: nil, bundle: nil)
         self.coordinator = coordinator
         title = "Stats"

@@ -8,20 +8,11 @@
 import Foundation
 
 protocol MainBaseCoordinator: Coordinator {
-    /// Reference to the PhotosCoordinator
-    var photosCoordinator: PhotosBaseCoordinator { get }
-    /// Reference to the StatsCoordinator
-    var statsCoordinator: StatsBaseCoordinator { get }
-    /// Object that contains the reference to the parent coordinator
-    var deepLinkCoordinator: DeepLinkBaseCoordinator { get }
+    /// List containing the references to the son coordinators
+    var coordinators: [Coordinator] {get}
 }
 
-protocol PhotosBaseCoordinated {
-    /// Associated coordinator for the photos flow
-    var coordinator: PhotosBaseCoordinator? { get }
-}
-
-protocol StatsBaseCoordinated {
-    /// Associated coordinator for the stats flow
-    var coordinator: StatsBaseCoordinator? { get }
+protocol Coordinated {
+    /// Associated coordinator for the flow management
+    var coordinator: Coordinator? { get }
 }
