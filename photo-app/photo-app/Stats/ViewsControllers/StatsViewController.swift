@@ -9,6 +9,10 @@ import UIKit
 
 class StatsViewController: UIViewController, Coordinated {
     
+    @IBOutlet weak var numberOfPhotos: UILabel!
+    @IBOutlet weak var numberOfLikedPhotos: UILabel!
+    @IBOutlet weak var numberOfDislikedPhotos: UILabel!
+    
     var coordinator: Coordinator?
     
     init(coordinator: Coordinator) {
@@ -23,7 +27,14 @@ class StatsViewController: UIViewController, Coordinated {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // self.view.backgroundColor = .orange
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        updateStats()
+    }
+    
+    private func updateStats() {
+        
     }
 
 }
