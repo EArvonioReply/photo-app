@@ -12,7 +12,9 @@ class PhotosCoordinator: Coordinator {
     lazy var rootViewController: UIViewController = UIViewController()
     
     func start() -> UIViewController {
-        rootViewController = UINavigationController(rootViewController: PhotosViewController(coordinator: self))
+        rootViewController = UINavigationController(rootViewController:
+                                                        PhotosViewController(coordinator: self, photosViewModel: PhotosViewControllerViewModel())
+                                                    )
         return rootViewController
     }
     
