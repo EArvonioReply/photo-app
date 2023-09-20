@@ -1,0 +1,3 @@
+[submodule "photo-app/AlamofireImage"]
+	path = photo-app/AlamofireImage
+	url = https://github.com/Alamofire/AlamofireImage.git

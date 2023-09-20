@@ -11,14 +11,21 @@ class PhotosViewController: UIViewController, Coordinated {
     
     @IBOutlet weak var photosTableView: UITableView!
     
-    var coordinator: Coordinator?
-    var numberOfPhotos = 10
+    var photosViewModel: PhotosViewControllerViewModel
+    var coordinator: Coordinator? // Dovrebbe essere nel view model?
     
-    init(coordinator: Coordinator) {
-        super.init(nibName: nil, bundle: nil)
+    init(coordinator: Coordinator, photosViewModel: PhotosViewControllerViewModel) {
         
         self.coordinator = coordinator
+        self.photosViewModel = photosViewModel
+        
+        super.init(nibName: nil, bundle: nil)
+        
         title = "Photos"
+        
+        photosViewModel.loadData { [weak self] in
+            self?.photosTableView.reloadData()
+        }
     }
     
     required init?(coder: NSCoder) {
@@ -28,6 +35,7 @@ class PhotosViewController: UIViewController, Coordinated {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        photosTableView.register(UINib(nibName: "PhotosTableViewCell", bundle: nil), forCellReuseIdentifier: "PhotosTableViewCell")
         photosTableView.delegate = self
         photosTableView.dataSource = self
         
@@ -38,21 +46,15 @@ class PhotosViewController: UIViewController, Coordinated {
 extension PhotosViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        tableView.register(PhotosTableViewCell.self, forCellReuseIdentifier: "Cell")
-        return numberOfPhotos
+        return photosViewModel.numberOfPhotos
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! PhotosTableViewCell
-        //cell.configure(by: Photo(picture: UIImage(systemName: "fireplace")!))
-        
-        // MARK: Emilio, perché sono stato costretto a usare il Bundle?
-        let bundle = Bundle(for: type(of: self))
-        let nib = UINib(nibName: "PhotosTableViewCell", bundle: bundle)
-        if let photoCell = nib.instantiate(withOwner: self, options: nil)[0] as? PhotosTableViewCell {
-            photoCell.configure(by: Photo(picture: UIImage(systemName: "fireplace")!))
-            return photoCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "PhotosTableViewCell", for: indexPath) as? PhotosTableViewCell else {
+            fatalError("Unable to dequeue PhotosTableViewCell in PhotosViewController")
         }
+        
+        cell.configure(by: photosViewModel, at: indexPath.row)
         return cell
     }
     
