@@ -13,11 +13,13 @@ class StatsViewController: UIViewController, Coordinated {
     @IBOutlet weak var numberOfLikedPhotos: UILabel!
     @IBOutlet weak var numberOfDislikedPhotos: UILabel!
     
+    var photosViewModel: PhotosViewControllerViewModel
     var coordinator: Coordinator?
     
-    init(coordinator: Coordinator) {
-        super.init(nibName: nil, bundle: nil)
+    init(coordinator: Coordinator, photosViewModel: PhotosViewControllerViewModel) {
         self.coordinator = coordinator
+        self.photosViewModel = photosViewModel
+        super.init(nibName: nil, bundle: nil)
         title = "Stats"
     }
     
@@ -34,7 +36,9 @@ class StatsViewController: UIViewController, Coordinated {
     }
     
     private func updateStats() {
-        
+        numberOfPhotos.text = photosViewModel.visiblePhotos.description
+        numberOfLikedPhotos.text = photosViewModel.numberOfLike.description
+        numberOfDislikedPhotos.text = photosViewModel.numberOfDislike.description
     }
 
 }

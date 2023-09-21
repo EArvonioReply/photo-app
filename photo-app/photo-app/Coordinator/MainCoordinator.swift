@@ -26,8 +26,14 @@ enum StatsScreen {
 
 class MainCoordinator: MainBaseCoordinator {
     var parentCoordinator: MainBaseCoordinator?
-    lazy var coordinators: [Coordinator] = [PhotosCoordinator(), StatsCoordinator()]
+    lazy var coordinators = [Coordinator]()
     lazy var rootViewController: UIViewController  = UITabBarController()
+    
+    init() {
+        let vm = PhotosViewControllerViewModel()
+        coordinators.append(PhotosCoordinator(photosViewModel: vm))
+        coordinators.append(StatsCoordinator(photosViewModel: vm))
+    }
     
     func start() -> UIViewController {
         

@@ -8,11 +8,16 @@
 import UIKit
 
 class StatsCoordinator: Coordinator {
+    var photosViewModel: PhotosViewControllerViewModel
     var parentCoordinator: MainBaseCoordinator?
     lazy var rootViewController: UIViewController = UIViewController()
     
+    init(photosViewModel: PhotosViewControllerViewModel) {
+        self.photosViewModel = photosViewModel
+    }
+    
     func start() -> UIViewController {
-        rootViewController = UINavigationController(rootViewController: StatsViewController(coordinator: self))
+        rootViewController = UINavigationController(rootViewController: StatsViewController(coordinator: self, photosViewModel: photosViewModel))
         return rootViewController
     }
     
