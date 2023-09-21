@@ -20,7 +20,6 @@ class APIHandler {
             case .success(let data):
                 do {
                     let searchResult = try JSONDecoder().decode(SearchResult.self, from: data!)
-                    // closure calling
                     handler(searchResult)
                 } catch {
                     print("error: \(error.localizedDescription)")

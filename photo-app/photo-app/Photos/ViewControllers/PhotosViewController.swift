@@ -12,7 +12,7 @@ class PhotosViewController: UIViewController, Coordinated {
     @IBOutlet weak var photosTableView: UITableView!
     
     var photosViewModel: PhotosViewControllerViewModel
-    var coordinator: Coordinator? // Dovrebbe essere nel view model?
+    var coordinator: Coordinator?
     
     init(coordinator: Coordinator, photosViewModel: PhotosViewControllerViewModel) {
         
@@ -53,7 +53,11 @@ extension PhotosViewController: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "PhotosTableViewCell", for: indexPath) as? PhotosTableViewCell else {
             fatalError("Unable to dequeue PhotosTableViewCell in PhotosViewController")
         }
-        
+        if let visibleIndexPaths = tableView.indexPathsForVisibleRows {
+            let numberOfVisibleCells = visibleIndexPaths.count
+            print("Numero di celle visibili: \(numberOfVisibleCells)")
+            photosViewModel.visiblePhotos = numberOfVisibleCells
+        }
         cell.configure(by: photosViewModel, at: indexPath.row)
         return cell
     }

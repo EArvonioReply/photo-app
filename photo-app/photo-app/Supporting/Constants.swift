@@ -14,7 +14,7 @@ struct Constants {
     static let port: Int? = nil
     static let fullURL = "https://api.flickr.com/"
     
-    private static let wordList = ["casa", "albero", "macchina", "gatto", "tavolo", "libro", "computer", "montagna"]
+    private static let wordList = ["casa", "albero", "macchina", "gatto", "tavolo", "libro", "caffè", "montagna"]
     static let API_KEY = "c10b359598e65b6998a2dd0505b7dd34"
     static let METHOD = "flickr.photos.search"
     static var searchKey: String {
