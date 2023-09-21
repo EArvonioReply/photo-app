@@ -12,4 +12,8 @@ struct FlickrPhoto: Decodable {
     let secret: String
     let server: String
     let farm: Int
+    
+    var photoUrl: String {
+        "https://farm\(farm).staticflickr.com/\(server)/\(id)_\(secret)_m.jpg"
+    }
 }

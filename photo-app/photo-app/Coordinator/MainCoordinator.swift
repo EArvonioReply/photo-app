@@ -30,9 +30,8 @@ class MainCoordinator: MainBaseCoordinator {
     lazy var rootViewController: UIViewController  = UITabBarController()
     
     init() {
-        let vm = PhotosViewControllerViewModel()
-        coordinators.append(PhotosCoordinator(photosViewModel: vm))
-        coordinators.append(StatsCoordinator(photosViewModel: vm))
+        coordinators.append(PhotosCoordinator())
+        coordinators.append(StatsCoordinator())
     }
     
     func start() -> UIViewController {

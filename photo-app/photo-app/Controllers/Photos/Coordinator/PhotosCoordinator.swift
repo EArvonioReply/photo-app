@@ -1,5 +1,5 @@
 //
-//  StatsCoordinator.swift
+//  PhotosCoordinator.swift
 //  photo-app
 //
 //  Created by Marco Agizza on 18/09/23.
@@ -7,30 +7,30 @@
 
 import UIKit
 
-class StatsCoordinator: Coordinator {
-    var photosViewModel: PhotosViewControllerViewModel
+class PhotosCoordinator: Coordinator {
     var parentCoordinator: MainBaseCoordinator?
     lazy var rootViewController: UIViewController = UIViewController()
     
-    init(photosViewModel: PhotosViewControllerViewModel) {
-        self.photosViewModel = photosViewModel
-    }
-    
     func start() -> UIViewController {
-        rootViewController = UINavigationController(rootViewController: StatsViewController(coordinator: self, photosViewModel: photosViewModel))
+        rootViewController = UINavigationController(
+            rootViewController: PhotosViewController(
+                coordinator: self,
+                viewModel: PhotosViewControllerViewModel()
+            )
+        )
         return rootViewController
     }
     
     func moveTo(flow: AppFlow, userData: [String : Any]? = nil) {
         switch flow {
-        case .stats(let screen):
-            handleStatsFlow(for: screen, userData: userData)
+        case .photos(let screen):
+            handlePhotosFlow(for: screen, userData: userData)
         default:
             parentCoordinator?.moveTo(flow: flow, userData: userData)
         }
     }
     
-    private func handleStatsFlow(for screen: StatsScreen, userData: [String: Any]?) {
+    private func handlePhotosFlow(for screen: PhotosScreen, userData: [String: Any]?) {
         switch screen {
         case .firstScreen:
             navigationRootViewController?.popToRootViewController(animated: true)
@@ -42,3 +42,4 @@ class StatsCoordinator: Coordinator {
         return self
     }
 }
+

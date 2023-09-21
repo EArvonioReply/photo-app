@@ -24,7 +24,6 @@ struct Photo: Identifiable {
 }
 
 extension Photo {
-    
     // DEBUG
     public static func getMockArray() -> [Photo] {
         return [
